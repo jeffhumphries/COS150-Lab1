@@ -1,10 +1,10 @@
-package test;
+package test.EinsteinTest;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import src.Einstein;
 
-public class EinsteinTests {
+public class EinsteinTest {
     @Test
     public void TimeDialationFactor_StandardTest() {
     	double velocity = 0.5;
