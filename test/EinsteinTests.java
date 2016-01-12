@@ -1,6 +1,8 @@
-package src;
+package test;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
+import src.Einstein;
 
 public class EinsteinTests {
     @Test
