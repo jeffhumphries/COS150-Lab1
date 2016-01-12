@@ -10,7 +10,7 @@ public class EinsteinTests {
     	double velocity = 0.5;
     	
         double timeDialation = Einstein.GetTimeDialationFactor(velocity);
-        assertEquals(1.1547005383792517, timeDialation);
+        assertEquals(1.1547005383792517, timeDialation, 1e-10);
     }
     
     @Test
@@ -19,7 +19,7 @@ public class EinsteinTests {
     	double distance = 0.5;
     	
         double travelTime = Einstein.GetRoundTripTravelTime(distance, velocity);
-        assertEquals(2.0, travelTime);
+        assertEquals(2.0, travelTime, 1e-10);
     }
     @Test
     public void AgeDifference_StandardTest() {
@@ -28,7 +28,7 @@ public class EinsteinTests {
     	double travelTime = 2.0;
     	
         double ageDifference = Einstein.GetAgeDifference(travelTime, gamma);
-        assertEquals(0.26794919243112303, ageDifference);
+        assertEquals(0.26794919243112303, ageDifference, 1e-10);
     }
     
     
